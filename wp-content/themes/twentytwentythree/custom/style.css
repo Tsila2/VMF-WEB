@@ -1,0 +1,600 @@
+/*
+ * ----------------------------------------------------------------------------------------
+ * Project Name: VMF
+ * Description: A project develloped for VMF.
+ * Author: Tsilavina NOMENJANAHARY
+ * License: MIT License
+ * License URL: https://opensource.org/licenses/MIT
+ * ----------------------------------------------------------------------------------------
+ */
+
+
+/* HOME STYLE */
+
+h2 {
+    font-family: "Gilroy-Bold", sans-serif;
+}
+
+.carousel-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-content {
+    background-size: cover;
+    border-radius: 15px;
+    width: 96vw;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel-item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50vh;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carousel-content-item {
+    text-align: center;
+    /* box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.3); */
+    border-radius: 15px;
+    margin: 0;
+    z-index: 99;
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 50vh;
+}
+
+.carousel-content-item .title {
+    color: #63203D;
+    margin: 0;
+    padding: 50px 0 30px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.carousel-content-item .description {
+    color: #174D25;
+    width: 70%;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.carousel-content-item .button {
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    padding: 1.5em 5em;
+    background: #efefef;
+    border: none;
+    border-radius: .5rem;
+    color: #444;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+        -6px -6px 10px rgba(255, 255, 255, .5),
+        6px 6px 8px rgba(255, 255, 255, .075),
+        6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+.carousel-content-item .button:hover {
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+        -2px -2px 4px rgba(255, 255, 255, .4),
+        2px 2px 2px rgba(255, 255, 255, .05),
+        2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+.carousel-content-item .button:active {
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+        inset -2px -2px 4px rgba(255, 255, 255, .5),
+        inset 2px 2px 2px rgba(255, 255, 255, .075),
+        inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+
+.activity {
+    border-radius: 15px;
+    width: 96vw;
+    /* height: 100vh; */
+    position: relative;
+    margin: 0 auto;
+}
+
+.activity .title {
+    color: #63203D;
+    margin: 0;
+    padding: 50px 0 30px;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.activity .description {
+    color: #191919;
+    width: 70%;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.activity .activity-content-items .description {
+    width: 90%;
+    height: 10rem;
+}
+
+.activity .activity-content-container {
+    width: 96vw;
+}
+
+.activity .activity-content-items {
+    border-radius: 15px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+    margin: 100px 0 0;
+    padding: 40px 45px;
+    position: relative;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+
+.activity .activity-content-items .promo-icon {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: -40px;
+    width: 100%;
+}
+
+.activity .activity-content-items h2 {
+    border-radius: 60px;
+    margin: 10px auto 38px;
+    position: relative;
+    width: -moz-fit-content;
+    color: #174D25;
+    text-align: center;
+    height: 7vh;
+    font-weight: 300;
+}
+
+.activity .activity-content-items p {
+    color: #3c354e;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+
+.activity .activity-content-items i {
+    border-radius: 50%;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    padding: 25px;
+    text-align: center;
+    background: #174D25;
+    color: #efeeee;
+}
+
+.activity .activity-content-items:hover>h2 {
+    color: #01d262;
+}
+
+.activity .activity-content-items:hover>.promo-icon i {
+    background: #01d262;
+    color: #fff;
+}
+
+.activity .activity-content-items:hover>h2::before {
+    background: #01d262;
+    color: #efeeee;
+}
+
+.block-wrapper {
+    background: linear-gradient(to bottom right, #E3498B, #C9407C);
+    background-size: 100% 100%;
+    border-radius: 15px;
+    width: 96vw;
+    position: relative;
+    margin: 0 auto;
+    padding: 60px 0;
+    margin-top: 50px;
+    box-shadow: 3px 6px 20px 0 rgba(201, 64, 124, 1);
+}
+
+.block-wrapper .block {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.block-wrapper .block i {
+    font-size: 60px;
+    color: #fff;
+}
+
+.block-wrapper .block p.counter-wrapper span {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.block-wrapper .block p.text-block {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.block-wrapper .for-border {
+    border-left: 1px solid #2be587;
+}
+
+.block-wrapper .for-border:first-child {
+    border-left: 0px solid #fff
+}
+
+.event {
+    width: 96vw;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.event .title {
+    color: #63203D;
+    margin: 0;
+    padding: 50px 0 30px;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.event .description {
+    color: #191919;
+    width: 70%;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.event .event-content .item {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.event .event-content .item .padding-p {
+    padding-top: 5px;
+}
+
+.event .event-content .item .event-title {
+    text-align: center;
+    height: 7rem;
+    padding: 15px;
+    color: #174D25;
+    font-weight: 500;
+}
+
+.event .event-content .item:hover .event-title {
+    color: #01d262;
+}
+
+.event .event-content .item .description {
+    width: 90%;
+    height: 15vh;
+    overflow: hidden;
+}
+
+.responsive-image-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.responsive-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.event .event-content .event_left {
+    left: 0;
+    position: absolute;
+    padding-left: 10px;
+}
+
+.event .event-content .event_right {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+}
+
+/* HOME STYLE */
+
+/* MISSION STYLE */
+
+div.body {
+    width: 96vw;
+    margin: 0 auto;
+}
+
+.mission .title {
+    color: #63203D;
+    margin: 0;
+    padding: 50px 0 30px;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.mission .description {
+    color: #191919;
+    width: 70%;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.mission .mission-content {
+    background: linear-gradient(to bottom right, #E3498B, #C9407C);
+    background-size: 100% 100%;
+    border-radius: 15px;
+    box-shadow: 3px 6px 20px 0 rgba(201, 64, 124, 1);
+    padding: 20px;
+}
+
+.mission .mission-content .project-title {
+    text-align: center;
+    color: #efeeee;
+}
+
+.mission .project-list {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.mission .project-list li {
+    list-style-type: none;
+    color: #efefef;
+    font-size: 1.5em;
+}
+
+.mission .project-list li:before {
+    content: counter(item, disc) " ";
+    color: pink;
+    font-size: 1.2em;
+    /* Adjust the font size as needed */
+}
+
+.mission-event {
+    border-radius: 15px;
+}
+
+.mission-event .event-title {
+
+    border-radius: 15px;
+    text-align: center;
+    color: #63203D;
+}
+
+.mission-event .event-item {
+    color: #191919;
+    width: 80%;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.mission-event .event-item .media-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.mission-event .event-item .description {
+    color: #191919;
+    text-align: center;
+}
+
+.mission-event .event_location {
+    width: 80%;
+    margin: 10px auto;
+    position: relative;
+    height: 7vh;
+}
+
+.mission-event .event_location .event_left {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+}
+
+.mission-event .event_location .event_right {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+}
+
+.mission-event .event-item .media-container img,
+.mission-event .event-item .media-container video {
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/* MISSION STYLE */
+
+/* JOIN STYLE */
+
+.join {
+    width: 96vw;
+    margin: 20px auto;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.join .join-container {
+    padding: 30px;
+}
+
+.join .title {
+    color: #63203D;
+    margin: 0;
+    padding: 30px 0 20px 0;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.join textarea {
+    max-width: 100%;
+}
+
+/* JOIN STYLE */
+
+/* CONTACT STYLE */
+
+.contact {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.contact .title {
+    color: #63203D;
+    margin: 0;
+    padding: 40px 0 30px;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact .button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.contact .button:focus,
+.contact .button:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+/* CONTACT STYLE */
+
+/* ABOUT STYLE */
+
+.about {
+    width: 96vw;
+    margin: 0 auto;
+}
+
+.about .title {
+    color: #63203D;
+    margin: 0;
+    padding: 50px 0 30px;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about .story {
+    margin: 10px auto;
+    padding: 50px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom right, #E3498B, #C9407C);
+    box-shadow: 3px 6px 20px 0 rgba(201, 64, 124, 1);
+    color: #fff;
+}
+
+.about .vision {
+    margin: 10px auto;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 15px;
+    color: #191919;
+}
+
+.about .amission {
+    margin: 10px auto;
+    border-radius: 15px;
+    background: linear-gradient(to bottom right, #E3498B, #C9407C);
+    box-shadow: 3px 6px 20px 0 rgba(201, 64, 124, 1);
+    padding: 50px;
+    color: #fff;
+}
+
+.about .value {
+    margin: 10px auto;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 15px;
+    color: #191919;
+}
+
+.about .subtitle {
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.about p {
+    text-indent: 30px;
+    font-size: 1.2em;
+}
+
+.about .slogan{
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* ABOUT STYLE */
