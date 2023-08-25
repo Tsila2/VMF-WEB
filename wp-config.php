@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'vmfmadao_org' );
 
 /** Database username */
-define( 'DB_USER', 'vmfmadao_org' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', '-qR1p.](Is2c8[S4' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
