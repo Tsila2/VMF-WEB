@@ -653,6 +653,7 @@ function content_modificator_enqueue_scripts()
     wp_enqueue_style('responsive-style', plugins_url('/custom/responsive.css', __FILE__));
     wp_enqueue_style('header-style', plugins_url('/custom/header_style.css', __FILE__));
     wp_enqueue_style('footer-style', plugins_url('/custom/footer_style.css', __FILE__));
+    wp_enqueue_style('gilroy-bold', 'https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap.min.css');
 
     wp_enqueue_script('jquery', plugins_url('/custom/js/jquery-3.1.1.min.js', __FILE__), array(), '3.1.1', true);
     wp_enqueue_script('feather-icons', 'https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js', array('jquery'), '1.0', true);
@@ -893,11 +894,11 @@ function custom_joinpage()
 }
 add_shortcode('custom_joinpage', 'custom_joinpage');
 
-function custom_submitpage()
+function custom_thankyoupage()
 {
     ob_start();
 
-    $footer_file = plugin_dir_path(__FILE__) . '/page/submit-page.php';
+    $footer_file = plugin_dir_path(__FILE__) . '/page/thank-you.php';
     if (file_exists($footer_file)) {
         include($footer_file);
     } else {
@@ -906,4 +907,34 @@ function custom_submitpage()
 
     return ob_get_clean();
 }
-add_shortcode('custom_submitpage', 'custom_submitpage');
+add_shortcode('custom_thankyoupage', 'custom_thankyoupage');
+
+function custom_thankyou2page()
+{
+    ob_start();
+
+    $footer_file = plugin_dir_path(__FILE__) . '/page/thank-you-2.php';
+    if (file_exists($footer_file)) {
+        include($footer_file);
+    } else {
+        echo 'Footer file not found.';
+    }
+
+    return ob_get_clean();
+}
+add_shortcode('custom_thankyou2page', 'custom_thankyou2page');
+
+function custom_memberpage()
+{
+    ob_start();
+
+    $footer_file = plugin_dir_path(__FILE__) . '/page/member.php';
+    if (file_exists($footer_file)) {
+        include($footer_file);
+    } else {
+        echo 'Footer file not found.';
+    }
+
+    return ob_get_clean();
+}
+add_shortcode('custom_memberpage', 'custom_memberpage');

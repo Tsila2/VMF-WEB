@@ -1,4 +1,4 @@
-/* Global Styles */
+/*/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +24,6 @@ body::-webkit-scrollbar {
 .nav {
     width: 96vw;
     height: 80px;
-    background-color: #efeeee;
     box-shadow: 10px 10px 12px 0 rgba(0, 0, 0, 0.3);
     border-radius: 0 0 10px 10px;
     display: flex;
@@ -38,7 +37,7 @@ body::-webkit-scrollbar {
     z-index: 999;
     backdrop-filter: blur(5px);
     /* Adjust the blur value as needed */
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(210, 146, 93, 0.4);
     /* Adjust the background color and opacity as needed */
 }
 
@@ -46,9 +45,9 @@ body::-webkit-scrollbar {
     margin-right: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    color: dimgray;
+    color: rgb(90, 89, 89);
     font-weight: 900;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(255, 255, 255, 1);
+    /*    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(255, 255, 255, 1);*/
 }
 
 .nav li:not(.logo) {
@@ -60,7 +59,8 @@ body::-webkit-scrollbar {
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
     transition: color 0.2s ease-out, transform 0.2s ease-out;
-    color: dimgray;
+    color: white;
+    font-weight: bold;
 }
 
 .nav li:not(.logo):hover {
@@ -87,28 +87,14 @@ body::-webkit-scrollbar {
 
 /* Add this CSS to your existing stylesheet */
 /* Add this CSS to your existing stylesheet */
+#back li {
+    display: inline-block;
+}
+
 .nav li {
     position: relative;
     cursor: pointer;
     padding: 0;
-}
-
-.nav li::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: calc(-100% - -5px);
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    background-color: #efeeee;
-    color: dimgray;
-    padding: 5px 10px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px rgba(255, 255, 255, 1);
-    font-size: 12px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
 .nav li:hover::before {
@@ -116,10 +102,629 @@ body::-webkit-scrollbar {
     visibility: visible;
 }
 
-/* Add this CSS to your existing stylesheet */
 .header_container {
     display: flex;
     justify-content: center;
-    /* Center the content horizontally */
     align-items: center;
+}
+
+.checkbtn {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    left: 20px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (min-width:859px) and (max-width: 952px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    body {
+        margin-left: -1%;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-left: 20PX;
+    }
+
+    .socialmission .image{
+        display: none!important;
+    }
+
+    .nav .logo {
+        display: block;
+        /*   margin-top: 10px;*/
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 25px;
+        width: 20%;
+    }
+
+    .nav {
+        width: 105%;
+        display: block;
+    }
+
+    .nav li:not(.logo) {
+        position: fixed;
+        display: inline-block;
+        line-height: 10px;
+        top: 20px;
+        left: 50px;
+        width: 35%;
+        text-align: center;
+        background-color: #EAC9AD;
+        color: grey;
+        position: relative;
+        margin: 8PX 3%;
+    }
+
+    #back {
+        position: absolute;
+        top: 80px;
+        background-color: rgb(217, 217, 217, 0.7);
+        background-size: 100% 100%;
+        width: 120%;
+        margin: auto -30px;
+        height: 18VW;
+        left: -120%;
+        padding: auto 50px;
+    }
+
+    #check:checked~#back {
+        left: 0px;
+    }
+
+    .carousel-content {
+        height: 80vh;
+    }
+
+    /* .carousel-item {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 70vh;
+        margin: 20px;
+        border-radius: 15px;
+        border: 1px solid black;
+    }
+
+    .carousel-content-item {
+        text-align: center;
+        border-radius: 15px;
+        margin: 0;
+        z-index: 99;
+        backdrop-filter: blur(1px);
+        background-color: rgba(255, 255, 255, 0.7);
+        height: 70vh; 
+}*/
+
+    .carousel-content-item .description {
+        width: 80%;
+    }
+
+    .footer {
+        text-align: center;
+
+    }
+
+    #ed1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #ed2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sn1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sn2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #tr1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #tr2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sc1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sc2 {
+        padding: 5%;
+    }
+
+    #sc3 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sc4 {
+        padding: 5%;
+    }
+}
+
+@media (min-width:768px) and (max-width: 858px) {
+
+    .img-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 80% 30%;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .socialmission .image{
+        display: none!important;
+    }
+
+    body {
+        margin-left: -1%;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-left: 20PX;
+    }
+
+    .nav .logo {
+        display: block;
+        /*   margin-top: 10px;*/
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 25px;
+        width: 20%;
+    }
+
+    .nav {
+        width: 105%;
+        display: block;
+
+    }
+
+    .nav li:not(.logo) {
+        position: fixed;
+        display: inline-block;
+        line-height: 10px;
+        top: 20px;
+        left: 50px;
+        width: 35%;
+        text-align: center;
+        background-color: #EAC9AD;
+        color: grey;
+        position: relative;
+        margin: 8px 2%;
+    }
+
+    #back {
+
+        position: absolute;
+        top: 80px;
+        background-color: rgb(217, 217, 217, 0.7);
+        background-size: 100% 100%;
+        width: 120%;
+        margin: auto -30px;
+        height: 18VW;
+        left: -120%;
+        padding: auto 50px;
+    }
+
+    #check:checked~#back {
+        left: 0px;
+    }
+
+    .footer {
+        text-align: center;
+
+    }
+
+    .footer .footer-charity-text {
+        max-width: 40%;
+
+    }
+
+    .footer .footer-charity-text .logo {
+
+        margin-bottom: 20%;
+    }
+
+    #ed1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #ed2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sn1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sn2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #tr1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #tr2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sc1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sc2 {
+        padding: 5%;
+    }
+
+    #sc3 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sc4 {
+        padding: 5%;
+    }
+
+}
+
+@media (min-width:480px) and (max-width: 767px) {
+
+    body {
+        margin-left: -1%;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .socialmission .image{
+        display: none!important;
+    }
+
+    .nav .logo {
+        display: block;
+        /*   margin-top: 10px;*/
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 25px;
+        width: 40%;
+    }
+
+    .nav {
+        width: 105%;
+        display: block;
+    }
+
+    .nav li:not(.logo) {
+        position: fixed;
+        display: inline-block;
+        line-height: 10px;
+        top: 20px;
+        left: 40px;
+        width: 30%;
+        text-align: center;
+        background-color: #EAC9AD;
+        color: white;
+        position: relative;
+        margin: 8PX 6%
+    }
+
+    .activity-content-items h2 {
+        font-size: 20px;
+    }
+
+    #back {
+        position: absolute;
+        top: 80px;
+        background-color: rgb(217, 217, 217, 0.7);
+        background-size: 100% 100%;
+        width: 120%;
+        margin: auto -30px;
+        height: 25VW;
+        left: -140%;
+        padding: auto 50px;
+
+    }
+
+    #check:checked~#back {
+        left: 0px;
+    }
+
+    .carousel-content {
+        height: 55vh;
+    }
+
+    .carousel-item {
+        height: 50vh;
+    }
+
+    .carousel-content-item {
+        height: 50vh;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer .footer-charity-text {
+        margin-left: 24%;
+    }
+
+    .about .slogan {
+        text-transform: uppercase;
+        font-size: 2em;
+        text-align: center;
+        position: relative;
+        left: -18px;
+    }
+
+    #ed1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #ed2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sn1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sn2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #tr1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #tr2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+
+    #sc1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sc2 {
+        padding: 5%;
+    }
+
+
+    #sc3 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sc4 {
+        padding: 5%;
+    }
+
+    .contact {
+        width: 100%!important;
+    }
+}
+
+@media (max-width:479px) {
+
+    body {
+        margin-left: -3%;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .socialmission .image{
+        display: none!important;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .nav .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 25px;
+        width: 40%;
+    }
+
+    .nav {
+        width: 105%;
+        display: block;
+    }
+
+    .nav li:not(.logo) {
+        position: fixed;
+        display: inline-block;
+        line-height: 10px;
+        top: 20px;
+        left: 40px;
+        width: 40%;
+        text-align: center;
+        background-color: #EAC9AD;
+        color: white;
+        position: relative;
+        margin: 8PX 3%;
+    }
+
+    #back {
+        position: absolute;
+        top: 80px;
+        background-color: rgb(217, 217, 217, 0.7);
+        background-size: 100% 100%;
+        margin-left: 15%;
+        width: 108%;
+        margin: auto -30px;
+        height: 30VW;
+        left: -110%;
+        padding: auto 50px;
+    }
+
+    #check:checked~#back {
+        left: 0px;
+    }
+
+    .block-wrapper {
+        margin-right: 26%;
+    }
+
+    .carousel-content {
+        height: 95vh;
+    }
+
+    .carousel-item {
+        height: 90vh;
+    }
+
+    .carousel-content-item {
+        height: 90vh;
+    }
+
+    .carousel-content-item .description {
+        width: 85%;
+    }
+
+    /* .footer {
+        text-align: center;
+    }
+
+    .footer .footer-charity-text {
+        margin-left: 10%;
+    } */
+
+    .footer .footer_bottom p {
+        font-size: 12px !important;
+        margin: 0 !important;
+    }
+
+    .about .slogan {
+        text-transform: uppercase;
+        font-size: 2em;
+        text-align: center;
+        position: relative;
+        left: -18px;
+    }
+
+    #ed1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #ed2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sn1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sn2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #tr1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #tr2 {
+        padding: 0;
+        text-align: center;
+    }
+
+    #tr2 p{
+        margin: 0!important;
+    }
+
+    #sc1 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sc2 {
+        padding: 5%;
+    }
+
+
+    #sc3 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #sc4 {
+        padding: 5%;
+    }
+
+    .contact {
+        width: 100%!important;
+    }
+
+    .img-container {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        padding-top: 27.56%;
+        /* 16:9 Aspect Ratio (h/w * 100) */
+        overflow: hidden;
+    }
+
+    .img-container img{
+        height: 200px;
+    }
 }

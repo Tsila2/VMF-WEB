@@ -2,7 +2,8 @@
     background: #2e2e2e;
     width: 96vw;
     margin: 20px auto 0;
-    padding-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 10px !important ;
     border-radius: 15px;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
 }
@@ -37,15 +38,17 @@
     margin-right: 20px;
 }
 
+
+
 .footer-charity-text hr {
     margin: 35px 0;
 }
 
-.footer .footer-text h3 {
+.footer .footer-text h4 {
     color: #fff;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 500;
     margin: 8px 0 25px;
 }
 
@@ -68,7 +71,7 @@
 .footer .footer-text.one ul li i {
     color: rgb(91, 91, 91);
     font-size: 15px;
-    left: -7px;
+    left: -8px;
     position: absolute;
     top: 3px;
 }
@@ -109,7 +112,7 @@
     font-weight: 400;
     height: 75px;
     line-height: 75px;
-    margin: 70px 0 0;
+    margin: 30px auto;
     padding: 0;
     text-align: center;
     border-radius: 15px;

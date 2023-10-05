@@ -17,14 +17,18 @@ $upload_dir = wp_upload_dir();
                     foreach ($carousel_items as $item) {
                     ?>
                         <div class="carousel-content-item">
-                            <h3 class="title">
+                            <br>
+                            <h2>NOTRE DEVISE</h2>
+                            <h3>JUSTICE - BONTE - COURAGE</h3>
+
+                            <h4 class="title">
                                 <?php echo stripslashes($item->title); ?>
-                            </h3>
+                            </h4>
                             <p class="description">
                                 <?php echo stripslashes($item->description); ?>
                             </p>
-                            <button tabindex="0" onclick="donate()" class="btn btn-primary">
-                                Donation
+                            <button tabindex="0" onclick="donate()" class="btn donation">
+                                Faire un don
                             </button>
                         </div>
                     <?php
@@ -75,17 +79,19 @@ $upload_dir = wp_upload_dir();
         </div>
     </section>
 
+
+
     <div class="block-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-6 for-border">
+                <div class="col-md-4 col-sm-4 col-xs-12 for-border">
                     <div class="block">
                         <p><i class="material-icons">language</i></p>
                         <p class="counter-wrapper"><span class="code"></span></p>
                         <p class="text-block">PLACES</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-6 for-border">
+                <div class="col-md-4 col-sm-4 col-xs-12 for-border">
                     <div class="block">
                         <p><i class="material-icons">person_add</i></p>
                         <p class="counter-wrapper"><span class="bike"></span></p>

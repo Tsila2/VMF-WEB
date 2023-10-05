@@ -2,14 +2,41 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-05-02 07:40:11+0000\n"
+"PO-Revision-Date: 2023-09-25 10:13:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.6\n"
+"X-Generator: GlotPress/4.0.0-alpha.7\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Contact Form 7 - Stable (latest release)\n"
+
+#: includes/config-validator/validator.php:194
+msgid "Configuration error is detected."
+msgstr "Une erreur de configuration a été détectée."
+
+#: modules/sendinblue/service.php:163
+msgid "Brevo is active on this site."
+msgstr "Brevo est actif sur ce site."
+
+#: modules/sendinblue/contact-form-properties.php:109
+#: modules/sendinblue/service.php:30
+msgid "Brevo (formerly Sendinblue)"
+msgstr "Brevo (anciennement SendInBlue)"
+
+#: modules/sendinblue/contact-form-properties.php:101
+#: modules/sendinblue/service.php:156
+msgid "Brevo (formerly Sendinblue) integration"
+msgstr "Intégration Brevo (anciennement SendInBlue)"
+
+#: admin/includes/welcome-panel.php:153
+#: modules/sendinblue/contact-form-properties.php:297
+msgid "Brevo"
+msgstr "Brevo"
+
+#: admin/admin.php:689
+msgid "The next major release of Contact Form 7 will discontinue support for outdated PHP versions. If you don't upgrade PHP, you will not be able to upgrade the plugin."
+msgstr "La prochaine version majeure de Contact Form 7 interrompra la prise en charge des versions obsolètes de PHP. Si vous ne mettez pas à jour PHP, vous ne pourrez plus mettre à jour le plugin."
 
 #: includes/contact-form-functions.php:264
 msgid "Contact form not found."
@@ -84,7 +111,7 @@ msgstr "Ce champ a un numéro trop long."
 
 #: modules/number.php:186
 msgid "This field has a too small number."
-msgstr "Ce champ à un numéro trop court."
+msgstr "Le chiffre de ce champ est trop petit."
 
 #: modules/number.php:181
 msgid "Please enter a number."
@@ -92,11 +119,11 @@ msgstr "Veuillez saisir un numéro."
 
 #: modules/date.php:172
 msgid "This field has a too late date."
-msgstr "Ce champ à une date trop tardive."
+msgstr "La date de ce champ est trop tardive."
 
 #: modules/date.php:167
 msgid "This field has a too early date."
-msgstr "Ce champ à une date trop tôt."
+msgstr "La date de ce champ est trop tôt."
 
 #: modules/date.php:162
 msgid "Please enter a date in YYYY-MM-DD format."
@@ -117,11 +144,11 @@ msgstr "Le fichier téléversé est trop volumineux."
 
 #: includes/contact-form-template.php:215
 msgid "This field has a too short input."
-msgstr "Ce champ à un numéro trop court."
+msgstr "Ce champ a une saisie trop courte."
 
 #: includes/contact-form-template.php:208
 msgid "This field has a too long input."
-msgstr "Ce champ à une date trop tardive."
+msgstr "Ce champ a une saisie trop longue."
 
 #: includes/contact-form-template.php:201
 msgid "Please fill out this field."
@@ -336,6 +363,10 @@ msgstr "Ajouter des émetteurs de formulaires à vos listes de contacts"
 msgid "Contact lists"
 msgstr "Listes de contacts"
 
+#: modules/sendinblue/contact-form-properties.php:97
+msgid "You can set up the Brevo integration here. For details, see %s."
+msgstr "Vous pouvez configurer l’intégration Sendinblue ici. Pour plus de détails, voir %s."
+
 #: modules/sendinblue/service.php:212
 msgid "Save changes"
 msgstr "Enregistrer les modifications"
@@ -358,6 +389,10 @@ msgstr "Configurer l’intégration"
 #: modules/sendinblue/service.php:155
 msgid "https://contactform7.com/sendinblue-integration/"
 msgstr "https://contactform7.com/sendinblue-integration/"
+
+#: modules/sendinblue/service.php:149
+msgid "Store and organize your contacts while protecting user privacy on Brevo, the leading CRM & email marketing platform in Europe. Brevo offers unlimited contacts and advanced marketing features."
+msgstr "Stockez et organisez vos contacts tout en protégeant la vie privée des utilisateurs/utilisatrices sur Brevo, la première plateforme de CRM et d’e-mail marketing en Europe. Brevo offre un nombre illimité de contacts et des fonctionnalités marketing avancées."
 
 #: modules/sendinblue/service.php:126
 msgid "You have not been authenticated. Make sure the provided API key is correct."

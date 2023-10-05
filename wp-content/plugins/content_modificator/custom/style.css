@@ -10,9 +10,11 @@
 
 
 /* HOME STYLE */
-.wrapper{
+.wrapper {
     max-width: 100% !important;
+    height: 50%;
 }
+
 h2 {
     font-family: "Gilroy-Bold", sans-serif;
 }
@@ -27,7 +29,7 @@ h2 {
     background-size: cover;
     border-radius: 15px;
     width: 96vw;
-    height: 100vh;
+    height: 90vh;
     position: relative;
 }
 
@@ -36,26 +38,32 @@ h2 {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50vh;
+    height: 60vh;
     margin: 20px;
     border-radius: 15px;
 }
 
 .carousel-content-item {
     text-align: center;
-    /* box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.3); */
     border-radius: 15px;
     margin: 0;
     z-index: 99;
     backdrop-filter: blur(1px);
     background-color: rgba(255, 255, 255, 0.7);
-    height: 50vh;
+    height: 60vh;
+    /* border: 1px solid black; */
 }
+
+
+.carousel-content-item h2 {
+    font-weight: bold;
+}
+
 
 .carousel-content-item .title {
     color: #63203D;
     margin: 0;
-    padding: 50px 0 30px;
+    padding: 10px 0 30px 0px;
     font-weight: bold;
     font-size: 40px;
 }
@@ -66,43 +74,14 @@ h2 {
     font-size: 2rem;
     margin: 0 auto;
     padding-bottom: 30px;
+    text-align: justify;
 }
 
-.carousel-content-item .button {
-
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 60px;
-    padding: 1.5em 5em;
-    background: #efefef;
-    border: none;
-    border-radius: .5rem;
-    color: #444;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: .2rem;
-    text-align: center;
-    outline: none;
-    cursor: pointer;
-    transition: .2s ease-in-out;
-    box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
-        -6px -6px 10px rgba(255, 255, 255, .5),
-        6px 6px 8px rgba(255, 255, 255, .075),
-        6px 6px 10px rgba(0, 0, 0, .15);
-}
-
-.carousel-content-item .button:hover {
-    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
-        -2px -2px 4px rgba(255, 255, 255, .4),
-        2px 2px 2px rgba(255, 255, 255, .05),
-        2px 2px 4px rgba(0, 0, 0, .1);
-}
-
-.carousel-content-item .button:active {
-    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
-        inset -2px -2px 4px rgba(255, 255, 255, .5),
-        inset 2px 2px 2px rgba(255, 255, 255, .075),
-        inset 2px 2px 4px rgba(0, 0, 0, .15);
+.carousel-content-item .donation {
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold
 }
 
 .activity {
@@ -212,26 +191,27 @@ h2 {
     width: 96vw;
     position: relative;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 0px 0;
     margin-top: 50px;
     box-shadow: 3px 6px 20px 0 rgba(201, 64, 124, 1);
 }
 
 .block-wrapper .block {
     text-align: center;
-    padding: 25px 0;
+    padding: 24px 0;
 }
 
 .block-wrapper .block i {
-    font-size: 60px;
+    font-size: 40px;
     color: #fff;
 }
 
 .block-wrapper .block p.counter-wrapper span {
     color: #fff;
     font-family: "Roboto", sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 700;
+    margin: -10px;
 }
 
 .block-wrapper .block p.text-block {
@@ -239,6 +219,7 @@ h2 {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 400;
+
 }
 
 .block-wrapper .for-border {
@@ -309,14 +290,21 @@ h2 {
 
 .responsive-image-container {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    position: relative;
+    /*            width: 49%;*/
+    /*            padding-top: 27.56%;*/
+    /*             16:9 Aspect Ratio (h/w * 100) */
     overflow: hidden;
+    height: 30vh;
 }
 
 .responsive-image {
     width: 100%;
     height: 100%;
     border-radius: 15px;
+
+    object-fit: cover;
+    object-position: 80% 30%;
 }
 
 .event .event-content .event_left {
@@ -340,6 +328,7 @@ div.body {
     margin: 0 auto;
 }
 
+
 .mission .title {
     color: #63203D;
     margin: 0;
@@ -350,6 +339,16 @@ div.body {
     text-align: center;
 }
 
+
+.desc {
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    /* margin-top: -1 %  !important;
+ margin-bottom: 1%  !important; */
+    margin: 0 0 10px 0 !important;
+}
+
 .mission .description {
     color: #191919;
     width: 70%;
@@ -358,6 +357,8 @@ div.body {
     padding-bottom: 30px;
     text-align: center;
     overflow: hidden;
+    font-style: normal;
+    font-weight: 200;
 }
 
 .mission .mission-content {
@@ -417,6 +418,25 @@ div.body {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 20px;
+}
+
+.img-container {
+    position: relative;
+    width: 49%;
+    padding-top: 27.56%;
+    /* 16:9 Aspect Ratio (h/w * 100) */
+    overflow: hidden;
+}
+
+.img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80% 30%;
+
 }
 
 .mission-event .event-item .description {
@@ -549,36 +569,36 @@ div.body {
 
 .about .story {
     margin: 10px auto;
-    padding: 50px;
-    border-radius: 15px;
+    /*    padding: 50px;*/
+    /*border-radius: 15px;
     background: linear-gradient(to bottom right, #E3498B, #C9407C);
-    box-shadow: 3px 6px 20px 0 rgba(201, 64, 124, 1);
-    color: #fff;
+    box-shadow: 3px 6px 20px 0 rgba(201, 64, 124, 1);*/
+    color: black;
 }
 
 .about .vision {
     margin: 10px auto;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 50px;
+    /*    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);*/
+    /*    background-color: rgba(255, 255, 255, 0.7);*/
+    /*    padding: 50px;*/
     border-radius: 15px;
     color: #191919;
 }
 
 .about .amission {
     margin: 10px auto;
-    border-radius: 15px;
+    /*   border-radius: 15px;
     background: linear-gradient(to bottom right, #E3498B, #C9407C);
-    box-shadow: 3px 6px 20px 0 rgba(201, 64, 124, 1);
-    padding: 50px;
-    color: #fff;
+    box-shadow: 3px 6px 20px 0 rgba(201, 64, 124, 1);*/
+    /*    padding: 50px;*/
+    color: black;
 }
 
 .about .value {
     margin: 10px auto;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 50px;
+    /*    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);*/
+    /*    background-color: rgba(255, 255, 255, 0.7);*/
+    /*    padding: 50px;*/
     border-radius: 15px;
     color: #191919;
 }
@@ -593,6 +613,11 @@ div.body {
     font-size: 1.2em;
 }
 
+.about .p {
+    padding: 20px 50px;
+    justify-content: inherit;
+}
+
 .about .slogan {
     text-transform: uppercase;
     font-size: 2em;
@@ -600,3 +625,15 @@ div.body {
 }
 
 /* ABOUT STYLE */
+
+.subtitle {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.subtitle2 {
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
